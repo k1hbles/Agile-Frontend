@@ -1,0 +1,153 @@
+:root {
+  --kg-red: #b5121b;
+  --kg-red-dark: #8c0e15;
+  --kg-cream: #f8f1e7;
+  --kg-brown: #3b2a1f;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--kg-brown);
+}
+
+h1, h2, h3, h4, .brand-logo {
+  font-family: 'Playfair Display', serif;
+}
+
+.bg-cream {
+  background-color: var(--kg-cream);
+}
+
+.section-tag {
+  color: var(--kg-red);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+/* Navbar */
+.brand-logo {
+  color: var(--kg-red);
+  font-weight: 700;
+}
+
+.brand-logo span {
+  color: var(--kg-brown);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nav-link {
+  color: var(--kg-brown);
+  font-weight: 500;
+}
+
+/* Hero */
+.hero-img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0) 100%);
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.hero-title span {
+  color: #ffb3ab;
+}
+
+.hero-text {
+  color: #f1f1f1;
+  margin-top: 16px;
+}
+
+.hero-cta-text {
+  color: #ffb3ab;
+  font-weight: 600;
+}
+
+/* Product cards */
+.product-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card .card-title {
+  color: var(--kg-red);
+}
+
+/* Our Story */
+.story-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.stat-number {
+  color: var(--kg-red);
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #7a6a5f;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--kg-brown);
+}
+
+.footer-heading {
+  color: #e0c9a6;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 38px;
+  }
+  .hero-img {
+    height: 85vh;
+  }
+  .hero-title {
+    font-size: 51px;
+  }
+  .hero-text {
+    font-size: 18px;
+  }
+  .story-img {
+    height: 420px;
+  }
+}
